@@ -5,7 +5,7 @@ ALLOWED_HOSTS = ['*']
 DATABASE = {
     'NAME': 'netbox',
     'USER': 'netbox',
-    'PASSWORD': os.getenv('NETBOX_DB_PASSWORD'),
+    'PASSWORD': os.getenv('NETBOX-DB-PASSWORD'),
     'HOST': 'localhost',
     'PORT': '',
     'CONN_MAX_AGE': 300,
@@ -20,7 +20,7 @@ REDIS = {
         'HOST': 'localhost',
         'PORT': 6379,
         'USERNAME': '',
-        'PASSWORD': os.getenv('NETBOX_REDIS_PASSWORD'),
+        'PASSWORD': os.getenv('NETBOX-REDIS-PASSWORD'),
         'DATABASE': 0,
         'SSL': False,
     },
@@ -28,14 +28,14 @@ REDIS = {
         'HOST': 'localhost',
         'PORT': 6379,
         'USERNAME': '',
-        'PASSWORD': os.getenv('NETBOX_REDIS_PASSWORD'),
+        'PASSWORD': os.getenv('NETBOX-REDIS-PASSWORD'),
         'DATABASE': 1,
         'SSL': False,
     }
 }
 
 # The secret key should be minimum 50 characters long
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET-KEY')
 
 DJANGO_ADMIN_ENABLED = True
 
